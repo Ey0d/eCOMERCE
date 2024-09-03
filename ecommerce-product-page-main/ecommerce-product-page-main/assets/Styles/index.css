@@ -1,0 +1,45 @@
+*{
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+a{
+    position: relative;
+}
+
+a::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: none;
+    background-color: rgb(212, 128, 3);
+    width: 100%;
+    height: 1px;
+}
+
+a:hover::before{
+  display: inline-block;
+}
+
+.addBTN{
+    color: black;
+    padding: 5px 35px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(212, 128, 3);
+}
+
+.decreament,.icreament{
+    background-color: white;
+    color: rgb(212, 128, 3);
+}
+
+.navbar-toggler{
+   border: none  !important;
+}
+
+@media(max-width:768px){
+    .mainnav{
+        width: 100%;
+    }
+}
